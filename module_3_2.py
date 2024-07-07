@@ -4,7 +4,7 @@ def send_email(message, recipient, sender = "university.help@gmail.com"):
     check_net = ".net"
     if recipient == sender:
         print('Нельзя отправить письмо самому себе!')
-    elif "@" not in recipient or "@" not in sender:
+    elif "@" not in recipient or "@" not in sender:  # когда уже отправил понял, что можно проверки написать через for
         print('Невозможно отправить письмо с адреса', sender, 'на адрес', recipient)
     elif check_com not in recipient and check_ru not in recipient and check_net not in recipient:
         print('Невозможно отправить письмо с адреса', sender, 'на адрес', recipient)
